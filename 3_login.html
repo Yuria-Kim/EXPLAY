@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explay_register</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+          <div class="logo">logo</div>
+          <div id="h_main">
+            <div class="main1">
+              <div class="title">explay(title)</div>
+              <button class="login">login</button>
+              <!-- 로그인한 이후에는 로그아웃으로 표시 바뀌에 출력!! -->
+            </div>
+  
+            <div class="main2">
+              <div class="menu">
+                <div class="submenu1">post</div>
+                <div class="submenu2">challenge</div>
+                <div class="submenu3">my page</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- body -->
+        <body>
+
+  
+  
+          <!-- wrapper -->
+          <div id="wrapper">
+  
+              <!-- content-->
+              <div id="content">
+  
+                  
+                  <!-- EMAIL -->
+                   <div>
+                    <h3 class="join_title"><label for="email">이메일</label></h3>
+                    <span class="box int_email">
+                        <input type="text" id="email" class="int" maxlength="100" placeholder="ex) abc@gmail.com">
+                    </span>
+                    <span class="error_next_box">이메일 주소를 다시 확인해주세요.</span>    
+                  </div>
+
+                  <!-- PW1 -->
+                  <div>
+                      <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
+                      <span class="box int_pass">
+                          <input type="text" id="pswd1" class="int" maxlength="20">
+                          <span id="alertTxt">사용불가</span>
+                          <img src="m_icon_pass.png" id="pswd1_img1" class="pswdImg">
+                      </span>
+                      <span class="error_next_box"></span>
+                  </div>
+                 
+
+  
+                  <!-- JOIN BTN-->
+                  <div class="btn_area">
+                      <button type="button" id="btnJoin">
+                          <span>로그인</span>
+                      </button>
+                      <br>
+                      <br>
+                      
+
+                      
+                  </div>
+                  <!-- <button type="button" id="btn_re">비밀번호 재설정</button>
+                  <button type="button" id="btn_re">회원가입</button>
+                  <br>
+                  <br> -->
+                  <button class="custom-btn btn-5"><span>비밀번호 재설정</span></button>
+                  <button class="custom-btn btn-5"><span>회원가입</span></button>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+
+
+                  <div class="another_join">
+                    
+                    <img src="img_files/btn_sns/btn_naver_register.gif" 
+                    width="260px" alt="naver_login" class="joinnaver"> 
+                    <img src="img_files/btn_sns/btn_kakao_register.gif" 
+                    width="260px" alt="kakao_login" class="joinkakao">
+                  </div>
+                  
+
+              </div> 
+              <!-- content-->
+  
+          </div>
+          
+          <!-- wrapper -->
+     
+      </body>
+
+  
+        <!-- footer -->
+        <div id="footer">
+          <div class="footer1">
+            <div class="notice">
+              <p style="font-weight: 800; font-size: large;">고객센터</p>
+              <p>오전 10시 - 오후 4시30분 (주말, 공휴일 제외)</p>
+              <button class="question">문의하기</button>
+              <!-- a 태그 링크로 해도 괜찮을거에용 수현 said -->
+              
+              <p style="font-size: small;"><br>Copyright © 2023 Explay.co.,Ltd. All rights reserved.</p>
+              <p style="font-size: small;">Contact us. 070-1234-5678</p>
+            </div>
+          </div>
+          <div class="footer2">
+            <!-- 최종 이미지로 교체 잊지말기/ 배경 따로 줄거니까 투명처리 필수 -->
+            <img src="img_files/map_투명2.png" width="720px" height="200px">
+          </div>
+        </div>
+      </div>
+</body>
+</html>

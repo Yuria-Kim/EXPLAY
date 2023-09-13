@@ -1,0 +1,548 @@
+@charset "utf-8";
+@media (max-width: 600px){}
+
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#wrap {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background-image: url("img_files/backimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* header */
+  #header {
+    width: 100%;
+    display: flex;
+
+  }
+  #header .logo {
+    width: 10%;
+    height: 200px;
+    border: solid 1px black;
+    /* background-color: #a5a09c; */
+  }
+  #header #h_main {
+    width: 90%;
+    height: 200px;
+    /* background-color: #574c4e; */
+  }
+  #h_main .main1 {
+    width: 100%;
+    height: 150px;
+    /* background-color: #eeefea; */
+    display: flex;
+  }
+  #h_main .main1 .title {
+    width: 90%;
+    height: 100px;
+    border: solid 1px black;
+    /* background-color: #cb9190; */
+    margin-left: 108px;
+  }
+  #header .main1 .login {
+    width: 10%;
+    height: 30px;
+    border: solid 1px black;
+    /* background-color: #cb9190; */
+    margin-left: 108px;
+    background-color: rgba(0,0,0,0);
+    
+    /* button 오른쪽으로 딱 붙이는 명령어 찾아서 margin-left 변경하기 */
+    /* 버튼 배경 투명처리하기 */
+  }
+  
+  #h_main .main2 {
+    width: 100%;
+    height: 50px;
+    /* background-color: #eeefea; */
+  }
+  #h_main .main2 .menu {
+    width: 50%;
+    height: 100%;
+    /* background-color: #b1b4a3; */
+    display: flex;
+    float: right;
+    /* margin-left: 540px; */
+    /* 메뉴바 오른쪽에 딱붙이는 명령어로 수정하고 margin-left 제거 */
+    /* 외곽선 따라 빈공간 없게 만드는게 있는데,,, 그거 찾아서 추가 */
+  }
+  #h_main .main2 .menu .submenu1 {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px black;
+    /* background-color: rgb(194, 172, 172); */
+  }
+  #h_main .main2 .menu .submenu2 {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px black;
+    /* background-color: rgba(194, 172, 172, 0.611); */
+  }
+  #h_main .main2 .menu .submenu3 {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px black;
+    /* background-color: rgba(194, 172, 172, 0.149); */
+  }
+  
+  /* body */
+  #body {
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 1200px;
+    /* background-color: #e1dbce; */
+  }
+
+
+/* body_category */
+#body .category {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  /* background-color: #cdd2cb; */
+  margin-top: 20px;
+ 
+  /* margin-bottom 왜 안먹히지? post에 top으로 줘보자 */
+}
+#body .category .subcat {
+  width: 10%;
+  height: 60%;
+  margin-top: 10px;
+  margin-left: 180px;
+  /* background-color: #b0bdac; */
+  border: solid 1px #574c4e;
+}
+#body .category .words {
+  width: 30%;
+  height: 60%;
+  margin-top: 10px;
+  /* background-color: #b8c7b2; */
+  border: solid 1px #574c4e;
+}
+#body .category .searching {
+  width: 5%;
+  height: 62%;
+  margin-top: 10px;
+  background-color: rgba(0,0,0,0);
+  border: solid 1px #574c4e;
+}
+
+/* TAG */
+#body .tag{
+  margin-top: 10px;
+  width: 60%;
+  border: solid 1px #574c4e;
+  display: flex;
+}
+
+#body div > .post > div > select{
+  width: 15%;
+}
+
+
+
+/*body_post*/
+#body .post {
+  width: 100%;
+  height: 800px;
+  margin-top: 100px;
+  /* display: flex; */
+  /* background-color: aliceblue; */
+}
+#body > .post > p{
+      font-weight: 900;
+      font-size: larger;
+      text-align: center;
+}
+
+  
+  #p_main{
+      margin-left: 15%;
+      width: 70%;
+      height: 300px;
+      display: flex;
+      align-content: space-evenly;
+      /* background-color: #797d777f; */
+  }
+  #p_main .arrows {
+      margin-top: 135px;
+      width: 50px;
+      height: 50px;
+      
+  }
+  #p_main .imgbox{
+      margin-top: 45px;
+      margin-left: 50px;
+      width: 250px;
+      height: 250px;
+      border: 2px solid #574c4e;  
+  }
+  /* #p_main .imgbox2{
+      margin-top: 45px;
+      width: 220px;
+      height: 220px;
+      border: 2px solid #574c4e;  
+      margin-left: 10px;
+  }
+  #p_main .imgbox3{
+      margin-top: 45px;
+      width: 220px;
+      height: 220px;
+      border: 2px solid #574c4e; 
+      margin-left: 10px; 
+      margin-right: 50px;
+  } */
+
+
+#body .challenge{
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+#body .challenge > p{
+  font-weight: 900;
+  font-size: larger;
+  text-align: center;
+}
+
+#body .challenge .callender{
+  
+  width: 700px;
+  height: 250px;
+  margin: auto;
+  padding: 10px 0 10px 0;
+  border: solid 1px #574c4e;
+}
+
+/* 챌린지 본문 */
+
+#sub_wrap{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.ch_title {
+  width: 600px;
+  height: 60px;
+  background-color: rgba(112, 109, 103, 0.109);
+}
+
+
+
+.date_range {
+  display: flex;
+  align-items: center;
+}
+
+.date-range input[type="date"] {
+  margin: 0 50px;
+}
+
+.date-range span {
+  margin: 0 5px;
+}
+
+
+
+
+
+  
+#profile {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+#profile .pro1{
+  width: 20%;
+  height: 200px;
+  margin-left: 100px;
+}
+
+#profile .pro1 > div > img{
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#profile .pro1 > button{
+  float: right;
+  border: solid 1px #574c4e;
+  background-color: rgba(0,0,0,0);
+}
+
+  /* border-radius 50% 주면 div 동그랗게
+  rgba(0,0,0,0)주면 버튼배경 투명하게 */
+  
+  #profile .pro2{
+    width: 80%;
+  }
+  
+  #profile .pro2 .pmain >p{
+    width: 70%;
+    height: 100px;
+    border: solid 1px #574c4e;
+    margin-left: 150px;
+  }
+  #profile .pro2 .pmain >button{
+    float: right;
+    border: solid 1px #574c4e;
+    background-color: rgba(0,0,0,0);
+    margin-right: 150px;
+  }
+  
+#profile .count{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+  #profile .count > ul{
+    display: flex;
+    list-style: none;
+    outline: solid 1px #574c4e;
+  }
+  
+  #profile .count > ul > li{
+    margin-left: 70px;
+    /* outline: solid 1px #574c4e; */
+  }
+
+
+
+
+  #wrapper{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
+
+
+
+/* 입력폼 */
+
+
+h3 {
+  margin: 19px 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4e4848;
+}
+
+
+.box {
+  display: block;
+  width: 100%;
+  height: 51px;
+  border: solid 1px #dadada;
+  padding: 10px 14px 10px 14px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  background: #aaa1a151;
+  position: relative;
+}
+
+.int {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  border: none;
+  background: #aaa1a151;;
+  font-size: 15px;
+}
+
+input {
+  font-family: Dotum,'돋움',Helvetica,sans-serif;    
+}
+
+.box.int_id {
+  padding-right: 110px;
+}
+
+.box.int_pass {
+  padding-right: 40px;
+}
+
+.box.int_pass_check {
+  padding-right: 40px;
+}
+
+.step_url {
+  /*@naver.com*/
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+
+.pswdImg {
+  width: 18px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+select {
+  width: 100%;
+  height: 29px;
+  font-size: 15px;
+  /* background: #fff url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50% no-repeat; */
+  background-size: 20px 8px;
+  display: inline-block;
+  text-align: start;
+  border: none;
+  cursor: default;
+  font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+
+/* 에러메세지 */
+
+.error_next_box {
+  margin-top: 9px;
+  font-size: 12px;
+  color: red;    
+  display: none;
+}
+
+#alertTxt {
+  position: absolute;
+  top: 19px;
+  right: 38px;
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+/* 버튼 */
+
+.btn_area {
+  margin: 30px 0px;
+}
+
+#btnJoin {
+  width: 100%;
+  padding: 21px 0 20px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #6b756a6a;
+  font-size: 20px;
+  font-weight: 400;
+  /* font-family: Dotum,'돋움',Helvetica,sans-serif; */
+}
+
+
+
+  
+
+/* footer */
+#footer {
+    width: 100%;
+    height: 200px;
+    /* background-color: #cdd2cb; */
+    display: flex;
+  }
+  #footer .footer1{
+    margin-left: 300px;
+      width: 40%;
+      height: 200px;
+      /* background-color: #a39595; */
+  }
+  #footer .footer1 .notice{
+      width: 90%;
+      height: 200px;
+      margin-left: 30px;
+      margin-top: 30px;
+  }
+  #footer .footer2{
+    /* margin-left: 200px; */
+      width: 60%;
+      height: 200px;
+      /* background-color: #a39595; */
+  }
+  #footer > .footer1 > .notice > p{
+      line-height: 150%;
+      /* p태그 글 사이간격 줄이는거 */
+  }
+
+
+  /* button */
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-5 {
+    width: 230px;
+    height: 50px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #5f5851;
+  background: linear-gradient(0deg, rgba(161, 145, 144, 0.52) 0%, rgb(126, 111, 104) 100%);
+  }
+  .btn-5:hover {
+    color: #a89586;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background-color: #855227;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+    
+  
+  
