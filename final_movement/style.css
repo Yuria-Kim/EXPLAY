@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#fullpage {
+  position: relative;
+  top: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+.fullsection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.full1 {
+  background: red;
+}
+.full2 {
+  background: yellow;
+}
+.full3 {
+  background: green;
+}
+.full4 {
+  background: blue;
+}
+.full5 {
+  background: purple;
+}
+
+#fullpage span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.fullsection {
+  height: 100vh;
+}
+
+/* 페이지 이동 */
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+.menu {
+  display: flex;
+}
+.logo {
+  width: 300px;
+  height: 50px;
+  /* border: 1px solid black; */
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 5%;
+  margin-left: 13%;
+  z-index: 1;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.login {
+  width: 100px;
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 8%;
+  margin-left: 78%;
+  z-index: 1;
+  font-weight: bold;
+}
+.login a {
+  text-decoration: none;
+  color: black;
+}
+
+.go_page_post {
+  width: 100px;
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 12%;
+  margin-left: 15%;
+  z-index: 1;
+  font-weight: bold;
+}
+.go_page_challenge {
+  width: 100px;
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 12%;
+  margin-left: 20%;
+  z-index: 1;
+  font-weight: bold;
+}
+
+/* 페이지 이동 효과(실패)
+#page_change{
+    cursor: pointer;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	padding: 17px 30px;
+	width: 146px;
+	&:focus, &:active{
+        outline: none;
+    }
+	
+}
+Animation class
+.animate_content {
+    animation: animate 3s ease;
+}
+
+@keyframes animate {
+    10% {
+        transform: scale(1, 0.002);
+    }
+    35% {
+        transform: scale(0.2, 0.002);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.2, 0.002);
+        opacity: 0;
+    }
+    85% {
+        transform: scale(1, 0.002);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.fadeIn{
+    z-index: 10
+} */
+/* 페이지 이동 효과 두번째 도전(또실패) */
+/* 
+@keyframes delay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.05);
+      -webkit-transform: scaleY(0.05);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+  body{
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #4089a6;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    
+    &:before,
+    &:after{
+        content: '';
+        height: 50vh;
+        width:100%;
+        position:fixed;
+        left:0;
+        background: #1c2020;
+        z-index:1;
+        
+    }
+    
+    &:before{
+        top: 0;
+        transform: translateY(-100%);
+    }
+    &:after{
+        bottom: 0;
+        transform: translateY(100%);
+    }
+  }
+  .btn{
+    display: inline-block;
+    padding: 1.4em 1.6em;
+    margin-bottom: 2em;
+    border-radius: 50em;
+    background-color: lighten(#1c2020, 10%);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover{
+      background-color: lighten(#1c2020, 15%);
+    }
+  }
+  .loader {
+    margin: 0 auto;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 500;
+    opacity: 0;
+    
+    > div {
+      height: 100%;
+      width: 8px;
+      display: inline-block;
+      float: left;
+      margin-left: 2px;
+      animation: delay 0.8s infinite ease-in-out;
+    }
+    
+    .bar1{
+      background-color: #754fa0 ;
+    }
+    .bar2{
+      background-color: #09b7bf;
+      animation-delay: -0.7s;
+    }
+    .bar3{
+      background-color: #90d36b;
+      animation-delay: -0.6s;
+    }
+    .bar4{
+      background-color: #f2d40d;
+      animation-delay: -0.5s;
+    }
+    .bar5{
+      background-color: #fcb12b;
+      animation-delay: -0.4s;
+    }
+    .bar6{
+      background-color: #ed1b72;
+      animation-delay: -0.3s;
+    }
+  }
+ */
+
+/* 퀵버튼 */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quick {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100000;
+}
+.quick li {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.quick .on {
+  background: #fff;
+}
+
+.page-container {
+  height: 100vh; /* 화면 높이와 동일하게 설정 */
+  overflow: hidden; /* 페이지 내용이 넘치지 않도록 숨김 */
+}

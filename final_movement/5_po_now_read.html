@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post_now_reading...</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+                <div class="logo">logo</div>
+                <div id="h_main">
+                <div class="main1">
+                    <div class="title">explay(title)</div>
+                    <button class="login">login</button>
+                    <!-- 로그인한 이후에는 로그아웃으로 표시 바뀌에 출력!! -->
+                </div>
+        
+                <div class="main2">
+                    <div class="menu">
+                    <div class="submenu1">post</div>
+                    <div class="submenu2">challenge</div>
+                    <div class="submenu3">my page</div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        
+        <!-- body -->
+        <body id="body">
+            <div id="sub_wrap">
+                <h2 id="po_read_title">#DB에서 불러온 포스트 title</h2>
+                
+                <br><br><br>
+
+                <div id="po_read_mid">
+                    <div>
+                        <img id="po_read_trophy" src="img_files/logo_sample.png"><br>#챌린지 이미지</img>
+                    </div>
+                    <div>
+                        <p>#작성자닉네임</p>
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <article class="ch_img">
+                    <!-- 사진 -->
+                    <div id="p_main">
+                        <box class="imgbox">img 1</box>
+                        <box class="imgbox">img 2</box>
+                        <box class="imgbox">img 3</box>    
+                    </div>
+                    <br>
+                </article>
+
+                <br><br><br>
+
+                <article>
+                    <div id="po_read_text">
+                        <h2>#DB에서 불러온 포스트 본문 내용 요기요기</h2>
+                    </div>
+                </article>
+
+                <br><br><br>
+
+                <div id="po_read_tag">
+                    <h2>#DB에서 불러온 tag 내용 ex) "#ENFJ #저녁 # 우울함"</h2>
+                </div>
+
+                <br><br><br>
+
+                <div id="comm_photo">
+                    <box class="comm_photo_box">댓글에 포함할 이미지</box>
+                    <input type="file" class="comm_photo_added" multiple>
+                </div>
+
+                <div class="po_read_btn">
+                    <input type="text" placeholder="댓글을 남겨주세요" size="100">
+                    <input type="submit" value="등록">
+                </div>    
+
+            </div>
+
+            <br><br><br>
+
+        </body>
+
+        <!-- footer -->
+        <footer id="footer">
+                <div class="footer1">
+                <div class="notice">
+                    <p style="font-weight: 800; font-size: large;">고객센터</p>
+                    <p>오전 10시 - 오후 4시30분 (주말, 공휴일 제외)</p>
+                    <button class="question">문의하기</button>
+                    <!-- a 태그 링크로 해도 괜찮을거에용 수현 said -->
+                    
+                    <p style="font-size: small;"><br>Copyright © 2023 Explay.co.,Ltd. All rights reserved.</p>
+                    <p style="font-size: small;">Contact us. 070-1234-5678</p>
+                </div>
+                </div>
+                <div class="footer2">
+                <!-- 최종 이미지로 교체 잊지말기/ 배경 따로 줄거니까 투명처리 필수 -->
+                <img src="img_files/map_투명2.png" width="720px" height="200px">
+                </div>
+            
+        </footer>
+
+    </div>
+</body>
+</html>
