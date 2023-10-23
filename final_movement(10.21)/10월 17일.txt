@@ -1,0 +1,40 @@
+10월 21일
+1. 챌린지 작성페이지 name 추가
+2. 인원 카운팅해서 받는 부분 태그 추가
+3. 공지사항 input name 추가
+
+
+
+
+
+1. 페이지 연결
+main
+    ->post
+        -> post_read(모달)
+        -> post_write
+    ->challenge
+        -> now challenging(모달)
+        -> challenge start
+    ->login->register
+            ->find_password
+
+    ->login->mypage
+    
+
+            ## 모달창으로 불러오는 페이지들은 헤더, 푸터 날려도 될듯.
+
+
+    포스트메인>메인에서 이미지 클릭(a태그처리? 이미지에서 바로 이동 가능?)
+    >모달창pop>nowreadpg에 db결합
+
+
+
+
+2. form 태그, name 지정
+3. 게시판 생성
+    -공지사항
+    -Qna
+    -contact us
+4. tag 이름 null값 확인 <post까지 확인완료> - 챌린지 남음
+5. 챌린지 페이지 검색기능 삭제
+6. 최신, 댓글, 조회 순 select bar 확인 <포스트메인에 제작완료>
