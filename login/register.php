@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explay_register</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+    </head>
+<body>
+    <form action="register_server.php" method="post" name="register">
+        <!-- register_server.php로 form에 담긴 내용을 전달 -->
+    <div id="wrap">
+        <!-- header  -->
+        <!-- body -->
+        <body>
+            <button class="bustom-btn btn-4">
+                <a href="index.php">HOME</a>
+            </button>
+        <!-- wrapper -->
+          <div id="wrapper">
+  
+              <!-- content-->
+              <div id="content">
+  
+                  
+                  <!-- EMAIL -->
+                  <?php if(isset($_GET['error'])){ ?>
+                    <p class="error"> <?php echo $_GET['error']; ?> </p>
+                <?php } ?>
+
+                <?php if(isset($_GET['success'])){ ?>
+                    <p class="success"> <?php echo $_GET['success']; ?> </p>
+                <?php } ?>
+
+                   <div>
+                    <h3 class="join_title"><label for="email">이메일</label></h3>
+                    <span class="box int_email">
+                        <input name="email" type="email" id="email" class="int" maxlength="100" placeholder="ex) abc@gmail.com">
+                    </span>
+                    <span class="error_next_box">이메일 주소를 다시 확인해주세요.</span>    
+                  </div>
+
+                  <!-- PW1 -->
+                  <div>
+                      <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
+                      <span class="box int_pass">
+                          <input type="password" name="password" id="pswd1" class="int" maxlength="20">
+                          <span id="alertTxt">사용불가</span>
+                          <img src="m_icon_pass.png" id="pswd1_img1" class="pswdImg">
+                      </span>
+                      <span class="error_next_box"></span>
+                  </div>
+  
+                  <!-- PW2 -->
+                  <div>
+                      <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
+                      <span class="box int_pass_check">
+                          <input type="password" name="password_check" id="pswd2" class="int" maxlength="20">
+                          <img src="m_icon_check_disable.png" id="pswd2_img1" class="pswdImg">
+                      </span>
+                      <span class="error_next_box"></span>
+                  </div>
+  
+                  <!-- NAME -->
+                  <div>
+                      <h3 class="join_title"><label for="name">닉네임</label></h3>
+                      <span class="box int_name">
+                          <input type="text" name="nickname" id="name" class="int" maxlength="20">
+                      </span>
+                      <span class="error_next_box"></span>
+                  </div>
+                </form>
+                 
+  
+                  <!-- JOIN BTN-->
+                  <div class="btn_area">
+                      <button type="button" id="btnJoin">
+                          <input name="join" type="submit" id="btnJoin" value="가입하기">
+                    
+                        </button>
+                  </div>
+
+                  <div class="another_join">
+                    <img src="img_files/btn_sns/btn_naver_register.gif" 
+                    width="260px" alt="naver_login" class="joinnaver"> 
+                    <img src="img_files/btn_sns/btn_kakao_register.gif" 
+                    width="260px" alt="kakao_login" class="joinkakao">
+                  </div>
+                  
+
+              </div> 
+              <!-- content-->
+  
+          </div>
+          
+          <!-- wrapper -->
+     
+      </body>
+
+  
+        <!-- footer -->
+
+</body>
+</html>
