@@ -23,8 +23,8 @@
 
     if ($row = mysqli_fetch_assoc($result)) {
         // 세션 변수 설정
-            $_SESSION['email'] = $row['email'];
-            $_SESSION['user_code'] = $row['user_code'];
+            $_SESSION['email'] = $row['Email'];
+            $_SESSION['user_code'] = $row['User_code'];
 
             $sid = $_SESSION['email'];
             $suser_c = $_SESSION['user_code'];

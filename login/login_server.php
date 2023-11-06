@@ -3,10 +3,10 @@
     include ('db.php');
     include ('login_s.php');
 
-    if ($email==$row['email'] && $passwd==$row['password']) {
+    if ($email==$row['Email'] && $passwd==$row['Password']) {
         session_start();
-        $_SESSION['email'] = $row['email'];
-        $_SESSION['user_code'] = $row['user_code'];
+        $_SESSION['email'] = $row['Email'];
+        $_SESSION['user_code'] = $row['User_code'];
         echo "<script>alert('로그인 되었습니다.');
         location.replace('index.php');</script>";
         exit;
@@ -40,7 +40,7 @@
     //             // print_r($row); // 출력함수, 배열 출력 => echo는 배열 출력 X
     //             // var_dump($row); // 출력함수, 배열 출력, print_r()에서 배열 내 값의 자료형도 출력
 
-    //             $hash = $row['password'];
+    //             $hash = $row['Password'];
 
     //             if(password_verify($passwd, $hash)){
     //                 // header("location: login.php?success=로그인에 성공했습니다.");
