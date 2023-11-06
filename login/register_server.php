@@ -50,7 +50,7 @@
                 $result = mysqli_query($db, $sql_save);
 
                 if($result){
-                    echo "<script>alert('가입에 성공했습니다.');location.replace('index.php');</script>";
+                    echo "<script>alert('가입에 성공했습니다.');location.replace('login.php');</script>";
                     exit(); 
                 }
                 else{
